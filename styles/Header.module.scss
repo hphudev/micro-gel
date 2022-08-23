@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
+@font-face {
+  font-family: 'UTM Bebas';
+  src: url(/font/utm-bebas-2.ttf) format('truetype');
+}
+
+.header {
+  height: 1040px;
+  background-image: url('../public/image/background.png');
+  background-position: center;
+  background-size: center;
+  border-radius: 0 0 100px 100px;
+  position: relative;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 260px;
+  .header__main {
+    position: relative;
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    ul {
+      display: flex;
+      list-style: none;
+      background-color: white;
+      border-radius: 123px;
+      position: relative;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      li {
+        margin: 0px 20px;
+        font-size: 1.8rem;
+        font-style: normal;
+        line-height: 20px;
+        padding: 10px 16px;
+        transition: all 0.2s ease-in;
+        color: #253a53;
+        &:hover {
+          color: #5490cc;
+        }
+      }
+    }
+    .button {
+      position: relative;
+      height: 60px;
+      width: 125px;
+      button {
+        height: 100%;
+        width: 100%;
+        font-size: 1.8rem;
+        line-height: 20px;
+        background-color: white;
+        padding: 10px 16px;
+        border: 1px solid #5490cc;
+        border-radius: 123px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: #5490cc;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .header__footer {
+    position: absolute;
+    width: 100vw;
+    top: 583px;
+    // left: 770px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .sub {
+      position: relative;
+      top: 43px;
+      line-height: 32px;
+      line-height: 32px;
+      color: white;
+      width: fit-content;
+      .sub__p1 {
+        font-style: normal;
+        font-weight: 600px;
+        font-size: 26.8712px;
+        font-family: 'Raleway';
+      }
+      .sub__p2 {
+        font-family: 'UTM Bebas';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 86.3717px;
+        line-height: 78px;
+        text-transform: uppercase;
+      }
+      .button {
+        position: relative;
+        top: 32px;
+        height: 60px;
+        width: 206px;
+        line-height: 19.76px;
+        button {
+          height: 100%;
+          width: 100%;
+          font-size: 1.8rem;
+          line-height: 20px;
+          background-color: #5490cc;
+          padding: 10px 16px;
+          color: white;
+          // border: 1px solid #5490cc;
+          border: none;
+          border-radius: 123px;
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            background-color: #fff;
+            border: 1px solid #5490cc;
+            color: #000;
+          }
+        }
+      }
+    }
+    .image__box {
+      position: relative;
+      left: -150px;
+    }
+    .action {
+      position: relative;
+      right: -100px;
+      top: 30px;
+      .action__mess {
+        background-color: rgba($color: #fff, $alpha: 0.15);
+        border-radius: 100px;
+        width: 60px;
+        height: 60px;
+        border: none;
+        clip-path: circle(50% at 50% 50%);
+        margin-bottom: 10px;
+        i {
+          font-size: 24px;
+          color: #fff;
+        }
+        cursor: pointer;
+      }
+      .action__call {
+        background-color: rgba($color: #fff, $alpha: 1);
+        border-radius: 100px;
+        width: 60px;
+        height: 60px;
+        border: none;
+        clip-path: circle(50% at 50% 50%);
+        cursor: pointer;
+      }
+    }
+  }
+}
