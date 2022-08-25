@@ -17,7 +17,8 @@
   font-family: 'Roboto', sans-serif;
   margin-bottom: 260px;
   .header__main {
-    position: relative;
+    position: fixed;
+    z-index: 999;
     width: 100%;
     padding: 60px 20px;
     display: flex;

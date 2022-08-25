@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import styles from '../styles/Body.module.scss';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { useEffect } from 'react';
 const Body = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(`.${styles.main__slider}`, 0.3, { className: `${styles.main__slider}` });
+  }, []);
   const stylesGroup = {
     image__box: styles.image__box,
     border__radius: styles.border__radius,
@@ -41,7 +48,7 @@ const Body = () => {
         </div>
       </div>
       <div className={styles.slider}>
-        <div className={styles.main_slider + ' ' + stylesGroup['border__radius']}>
+        <div className={styles.main__slider + ' ' + stylesGroup['border__radius']}>
           <div className={styles.image__box}>
             <Image src="/image/blue-pro.svg" width="408px" height="620px" alt="" />
           </div>
@@ -56,7 +63,7 @@ const Body = () => {
           </div>
         </div>
         <div
-          className={styles.main_slider + ' ' + stylesGroup['min__height']}
+          className={styles.main__slider + ' ' + stylesGroup['min__height']}
           style={{
             backgroundColor: '#CB2027',
           }}
@@ -76,7 +83,7 @@ const Body = () => {
           </div>
         </div>
         <div
-          className={styles.main_slider + ' ' + ' ' + stylesGroup['min__height']}
+          className={styles.main__slider + ' ' + ' ' + stylesGroup['min__height']}
           style={{
             backgroundColor: '#D4B03C',
           }}
